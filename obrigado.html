@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Obrigado — Taxa Parceira Maquininhas</title>
-
-    <meta
-        name="description"
-        content="Recebemos suas informações com sucesso. Entraremos em contato em breve."
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <title>Diagnóstico Solicitado — Taxa Parceira</title>
+    <meta name="description" content="Recebemos suas informações com sucesso. Entraremos em contato em breve.">
+    
+    <!-- Bloqueia buscadores para evitar conversões falsas -->
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- =========================================================
          GOOGLE TAG — GOOGLE ADS
          ========================================================= -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406314850"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'AW-18406314850');
     </script>
 
-
     <!-- =========================================================
-         GOOGLE ADS — CONVERSÃO: ENVIAR FORMULÁRIO DE LEAD (3)
-         DISPARO: CARREGAMENTO DESTA PÁGINA
+         GOOGLE ADS — DISPARO DA CONVERSÃO: ENVIAR FORMULÁRIO DE LEAD
          ========================================================= -->
     <script>
         gtag('event', 'conversion', {
@@ -43,80 +32,213 @@
         });
     </script>
 
-</head>
+    <style>
+        :root {
+            --bg-main: #0b1120;
+            --bg-card: #131d31;
+            --primary: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #23334d;
+            --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font);
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .site-header {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(11, 17, 32, 0.85);
+            text-align: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .logo strong {
+            color: var(--primary);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .thank-you-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 44px 28px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .icon-check {
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            color: var(--primary);
+            font-size: 30px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+            color: #fff;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 580px;
+            margin: 0 auto 26px;
+        }
+
+        .steps-review {
+            background: rgba(11, 17, 32, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            margin: 24px auto 30px;
+            max-width: 520px;
+        }
+
+        .steps-review h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .steps-review ul {
+            list-style: none;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .steps-review li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .steps-review li:last-child {
+            margin-bottom: 0;
+        }
+
+        .btn-return {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--primary);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+        }
+        .btn-return:hover {
+            background: var(--primary);
+            color: #042f2e;
+        }
+
+        .site-footer {
+            background-color: #060a14;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 30px 20px;
+            font-size: 11px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .site-footer a {
+            color: #cbd5e1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
 
 <body>
 
     <header class="site-header">
-
-        <div class="container header-container">
-
-            <div class="logo">
-                <a href="index.html" class="logo-text">
-                    Taxa <strong>Parceira</strong>
-                </a>
-            </div>
-
+        <div class="container">
+            <a href="/" class="logo">Taxa <strong>Parceira</strong></a>
         </div>
-
     </header>
 
-
     <main>
-
-        <section class="thankyou-section">
-
-            <div class="container">
-
-                <div class="thankyou-box">
-
-                    <div class="thankyou-icon">
-                        ✅
-                    </div>
-
-                    <h1>
-                        Recebemos suas informações!
-                    </h1>
-
-                    <p>
-                        Obrigado por enviar seus dados. Vamos analisar as informações fornecidas e entrar em contato para apresentar as opções que podem fazer sentido para o seu negócio.
-                    </p>
-
-                    <a
-                        href="index.html"
-                        class="btn btn-primary"
-                    >
-                        Voltar para a página inicial
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
-
-        <div class="container footer-container">
-
-            <div class="footer-info">
-
-                <span class="logo-text">
-                    Taxa <strong>Parceira</strong>
-                </span>
-
+        <div class="container">
+            <div class="thank-you-card">
+                <div class="icon-check">✓</div>
+                <h1>Recebemos suas informações!</h1>
                 <p>
-                    &copy; 2026 Taxa Parceira Maquininhas. Todos os direitos reservados.
+                    Obrigado por enviar seus dados. Nossa análise técnica já está sendo iniciada para comparar as opções de taxas mais vantajosas para o seu perfil comercial.
                 </p>
 
+                <div class="steps-review">
+                    <h4>Próximos passos da análise:</h4>
+                    <ul>
+                        <li><span>📊</span> Cruzamos o seu volume com as tabelas vigentes.</li>
+                        <li><span>🔍</span> Identificamos o plano mais econômico para o seu modelo.</li>
+                        <li><span>📲</span> Enviamos o comparativo diretamente pelo seu WhatsApp.</li>
+                    </ul>
+                </div>
+
+                <a href="/" class="btn-return">Voltar para a página inicial</a>
             </div>
-
         </div>
+    </main>
 
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Responsável Técnico: <strong>Alexandre Queiroz de Almeida Souza</strong> | São Paulo - SP | Contato: alexandreqas.comercial@gmail.com
+            </p>
+            <p style="margin: 8px 0;">
+                <a href="privacidade.html">Política de Privacidade</a>
+            </p>
+            <p style="color: #475569;">
+                &copy; 2026 Taxa Parceira. Todos os direitos reservados. Análise consultiva e independente sobre meios de pagamento.
+            </p>
+        </div>
     </footer>
 
 </body>
