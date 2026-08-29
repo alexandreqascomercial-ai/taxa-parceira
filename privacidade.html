@@ -3,80 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade — Taxa Parceira Maquininhas</title>
-    <meta name="description" content="Política de privacidade e tratamento de dados da Taxa Parceira Maquininhas.">
-    <link rel="stylesheet" href="style.css">
+
+    <title>Política de Privacidade — Taxa Parceira</title>
+    <meta name="description" content="Política de privacidade e termos de tratamento de dados da Taxa Parceira em conformidade com a LGPD.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- =========================================================
+         GOOGLE TAG — GOOGLE ADS
+         ========================================================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406314850"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18406314850');
+    </script>
+
     <style>
-        .privacy-content {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px 80px;
+        :root {
+            --bg-main: #0b1120;
+            --bg-card: #131d31;
+            --primary: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #23334d;
+            --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
-        .privacy-content h1 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        .privacy-content h2 {
-            font-size: 1.4rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        .privacy-content p, .privacy-content ul {
-            color: var(--text-muted);
-            margin-bottom: 15px;
-            font-size: 1rem;
+
+        body {
+            font-family: var(--font);
+            background-color: var(--bg-main);
+            color: var(--text-main);
             line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
-        .privacy-content ul {
-            padding-left: 20px;
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .site-header {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(11, 17, 32, 0.85);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .logo strong {
+            color: var(--primary);
+        }
+        .btn-header {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--primary);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            padding: 8px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* CONTEÚDO */
+        .content-box {
+            padding: 40px 0 60px;
+        }
+        h1 {
+            font-size: clamp(26px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .last-update {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 30px;
+            display: block;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #fff;
+            margin: 28px 0 12px;
+            border-left: 3px solid var(--primary);
+            padding-left: 12px;
+        }
+        p {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+        ul {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin: 0 0 16px 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .highlight-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 24px 0;
+            font-size: 14px;
+            color: var(--text-main);
+        }
+
+        /* FOOTER */
+        .site-footer {
+            background-color: #060a14;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 36px 20px;
+            font-size: 12px;
+            line-height: 1.7;
+            text-align: center;
+        }
+        .site-footer a {
+            color: #cbd5e1;
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
+
     <header class="site-header">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html" class="logo-text">Taxa <strong>Parceira</strong></a>
-            </div>
-            <nav class="header-nav">
-                <a href="index.html" class="btn-nav">Início</a>
-            </nav>
+        <div class="container header-wrap">
+            <a href="/" class="logo">Taxa <strong>Parceira</strong></a>
+            <a href="/" class="btn-header">Voltar ao Início</a>
         </div>
     </header>
 
-    <main>
-        <div class="privacy-content">
-            <h1>Política de Privacidade</h1>
-            <p>A <strong>Taxa Parceira Maquininhas</strong> valoriza a sua privacidade e o compromisso com a transparência no tratamento de dados pessoais. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações.</p>
-            
-            <h2>1. Dados Coletados</h2>
-            <p>Coletamos apenas os dados fornecidos voluntariamente por você através do nosso formulário de contato (Tally), tais como nome, telefone, e-mail e informações sobre o perfil do seu negócio e volume de vendas.</p>
+    <main class="container content-box">
+        <h1>Política de Privacidade</h1>
+        <span class="last-update">Última atualização: Agosto de 2026</span>
 
-            <h2>2. Finalidade do Tratamento</h2>
-            <p>Os dados informados são utilizados exclusivamente para:</p>
-            <ul>
-                <li>Entrar em contato com você para apresentar alternativas de maquininhas e soluções de pagamento adequadas ao seu perfil;</li>
-                <li>Medição, atribuição e otimização de campanhas de publicidade e desempenho.</li>
-            </ul>
+        <p>
+            A <strong>Taxa Parceira</strong> preza pela transparência, segurança e privacidade dos dados de seus usuários, atuando em estrita conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018). Esta página descreve como coletamos, utilizamos e protegemos as informações fornecidas neste site.
+        </p>
 
-            <h2>3. Armazenamento e Compartilhamento</h2>
-            <p>As informações são armazenadas em ambientes seguros integrados aos nossos sistemas operacionais (como planilhas de gestão e ferramentas de atendimento). Não comercializamos nem cedemos seus dados pessoais a terceiros não autorizados.</p>
-
-            <h2>4. Direitos do Titular</h2>
-            <p>Você tiene o direito de solicitar a confirmação do tratamento, acesso, correção ou exclusão de seus dados pessoais a qualquer momento, entrando em contato conosco pelos canais oficiais.</p>
-
-            <h2>5. Contato</h2>
-            <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato através dos nossos canais de atendimento vinculados à nossa operação.</p>
+        <div class="highlight-box">
+            <strong>Controlador e Responsável Técnico:</strong><br>
+            Alexandre Queiroz de Almeida Souza<br>
+            São Paulo - SP — Brasil<br>
+            Contato de Privacidade e LGPD: alexandreqas.comercial@gmail.com
         </div>
+
+        <h2>1. Dados Coletados e Finalidade</h2>
+        <p>
+            Coletamos apenas as informações estritamente necessárias para realizar a simulação comparativa e apresentar as alternativas de meios de pagamento adequadas ao perfil da sua empresa:
+        </p>
+        <ul>
+            <li><strong>Dados de contato:</strong> Nome e número de WhatsApp (para envio direto do comparativo e esclarecimento de dúvidas sobre taxas).</li>
+            <li><strong>Dados operacionais do negócio:</strong> Faixa de faturamento mensal estimada, segmento de atuação e modalidade de venda (débito, crédito ou parcelado), utilizados exclusivamente para o cálculo técnico comparativo.</li>
+        </ul>
+        <p>
+            <strong>Importante:</strong> Não solicitamos dados bancários, senhas, chaves de acesso, números de cartão de crédito ou cópias de documentos pessoais para a realização do diagnóstico preliminar.
+        </p>
+
+        <h2>2. Plataforma de Coleta (Formulário)</h2>
+        <p>
+            A coleta inicial é realizada por meio da ferramenta externa e segura <strong>Tally</strong> (tally.so). Os dados preenchidos são trafegados via criptografia SSL/HTTPS e encaminhados ao nosso responsável técnico para análise manual das tabelas comerciais vigentes.
+        </p>
+
+        <h2>3. Uso de Cookies e Tecnologias de Rastreamento</h2>
+        <p>
+            Utilizamos a tag oficial do Google Ads (Google Tag) para mensurar o volume de acessos e a taxa de envio do formulário de diagnóstico. Essas ferramentas utilizam cookies de navegação para identificar a eficácia de nossas campanhas de divulgação. O usuário pode desativar ou limpar os cookies diretamente nas configurações do seu navegador a qualquer momento.
+        </p>
+
+        <h2>4. Compartilhamento de Dados e Transparência Comercial</h2>
+        <p>
+            A Taxa Parceira atua como um serviço independente de curadoria e comparação técnica. Nós <strong>não vendemos, alugamos ou comercializamos</strong> suas listas de contato com terceiros para fins de telemarketing não autorizado.
+        </p>
+        <p>
+            Caso você escolha contratar ou credenciar alguma das opções recomendadas no comparativo, você será direcionado para o ambiente oficial da instituição parceira credenciada, sujeitando-se aos termos e contratos da referida operadora. Podemos receber remuneração comercial pelo encaminhamento sem que isso altere as taxas ou gere qualquer cobrança para você.
+        </p>
+
+        <h2>5. Direitos do Titular (LGPD)</h2>
+        <p>
+            Nos termos do Artigo 18 da LGPD, você possui total controle sobre os seus dados pessoais, podendo a qualquer momento solicitar:
+        </p>
+        <ul>
+            <li>Confirmação da existência de tratamento dos dados;</li>
+            <li>Acesso às informações fornecidas;</li>
+            <li>Correção de dados incompletos ou inexatos;</li>
+            <li>Eliminação imediata dos dados de contato das nossas bases.</li>
+        </ul>
+        <p>
+            Para exercer qualquer um desses direitos, basta enviar uma mensagem direta para o e-mail: <strong>alexandreqas.comercial@gmail.com</strong>.
+        </p>
+
+        <h2>6. Isenção Legal Financeira</h2>
+        <p>
+            A Taxa Parceira não é banco, financeira ou intermediadora direta de crédito regulado pelo Banco Central do Brasil. O serviço limita-se à consultoria comparativa independente de custos transacionais para pessoas físicas e jurídicas.
+        </p>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <span class="logo-text">Taxa <strong>Parceira</strong></span>
-                <p>&copy; 2026 Taxa Parceira Maquininhas. Todos os direitos reservados.</p>
-            </div>
+        <div class="container">
+            <p>
+                Responsável Técnico: <strong>Alexandre Queiroz de Almeida Souza</strong> | São Paulo - SP | Contato: alexandreqas.comercial@gmail.com
+            </p>
+            <p style="margin-top: 10px; color: #475569;">
+                &copy; 2026 Taxa Parceira. Todos os direitos reservados.
+            </p>
         </div>
     </footer>
+
 </body>
 </html>
