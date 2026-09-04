@@ -73,16 +73,19 @@
             align-items: center;
             justify-content: space-between;
         }
+        
+        /* ESTILOS ATUALIZADOS DA LOGO */
         .logo {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: #fff;
+            display: flex;
+            align-items: center;
             text-decoration: none;
         }
-        .logo strong {
-            color: var(--primary);
+        .logo img {
+            max-height: 45px;
+            width: auto;
+            object-fit: contain;
         }
+        
         .btn-header {
             background: rgba(16, 185, 129, 0.12);
             color: var(--primary);
@@ -313,10 +316,12 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- CABEÇALHO COM A LOGO NOVA -->
     <header class="site-header">
         <div class="container header-wrap">
-            <a href="/" class="logo">Taxa <strong>Parceira</strong></a>
+            <a href="/" class="logo">
+                <img src="logo-taxa.png" alt="Logotipo Taxa Parceira">
+            </a>
             <a href="https://tally.so/r/1AoXKW" class="btn-header" target="_blank" rel="noopener">Fazer Comparativo</a>
         </div>
     </header>
