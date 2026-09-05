@@ -71,7 +71,7 @@
 
         /* HEADER */
         .site-header {
-            padding: 12px 0;
+            padding: 8px 0;
             border-bottom: 1px solid var(--border-color);
             background: rgba(11, 17, 32, 0.95);
             backdrop-filter: blur(8px);
@@ -83,7 +83,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
+            gap: 8px;
         }
         
         .logo {
@@ -93,9 +93,9 @@
             flex-shrink: 0;
         }
         .logo img {
-            height: 46px;
+            height: 58px;
             width: auto;
-            max-width: 100%;
+            max-width: none;
             object-fit: contain;
             display: block;
         }
@@ -104,10 +104,10 @@
             background: rgba(16, 185, 129, 0.12);
             color: var(--primary);
             border: 1px solid rgba(16, 185, 129, 0.35);
-            padding: 9px 16px;
+            padding: 8px 14px;
             border-radius: 8px;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
             white-space: nowrap;
             flex-shrink: 0;
@@ -121,15 +121,15 @@
         /* AJUSTE PARA TELAS DE CELULAR */
         @media (max-width: 480px) {
             .site-header {
-                padding: 10px 0;
+                padding: 6px 0;
             }
             .logo img {
-                height: 38px;
-                max-width: 160px;
+                height: 48px;
+                max-width: 210px;
             }
             .btn-header {
-                padding: 8px 12px;
-                font-size: 12px;
+                padding: 7px 10px;
+                font-size: 11px;
             }
         }
 
