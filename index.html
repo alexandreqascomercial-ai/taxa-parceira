@@ -114,31 +114,26 @@
             color: #042f2e;
         }
 
-        /* HERO COM IMAGEM E BOTÃO INTEGRADO CLICÁVEL */
-        .hero-img-container {
+        /* HERO COM LINK DIRETO NA ARTE (100% CLICÁVEL) */
+        .hero-banner-link {
+            display: block;
             max-width: 600px;
             margin: 40px auto 30px;
-            position: relative;
             border-radius: 16px;
             overflow: hidden;
             border: 1px solid var(--border-color);
             box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
         }
-        .hero-img-container img {
+        .hero-banner-link:hover {
+            transform: translateY(-2px);
+        }
+        .hero-banner-link img {
             width: 100%;
             height: auto;
             display: block;
-        }
-        .hero-cta-overlay {
-            position: absolute;
-            bottom: 4.5%;
-            left: 28%;
-            right: 28%;
-            height: 9.5%;
-            z-index: 999;
-            display: block;
-            background: transparent;
-            cursor: pointer;
         }
 
         .btn-main {
@@ -333,11 +328,10 @@
 
     <main class="container">
 
-        <!-- DOBRA 1: HERO COM A ARTE E BOTÃO CLICÁVEL -->
-        <section class="hero-img-container">
+        <!-- DOBRA 1: ARTE HERO 100% CLICÁVEL -->
+        <a href="https://tally.so/r/1AoXKW" class="hero-banner-link" target="_blank" rel="noopener" aria-label="Solicitar Análise">
             <img src="file_00000000b3a8820e88d7423efa33cd64.png" alt="Vai comprar ou trocar de maquininha? Descubra a opção ideal para seu negócio">
-            <a href="https://tally.so/r/1AoXKW" class="hero-cta-overlay" target="_blank" rel="noopener" aria-label="Solicitar Análise"></a>
-        </section>
+        </a>
 
         <!-- DOBRA 2: DIFERENCIAIS -->
         <section style="padding: 30px 0;">
