@@ -114,38 +114,33 @@
             color: #042f2e;
         }
 
-        /* HERO */
-        .hero {
-            padding: 50px 0 45px;
-            text-align: center;
+        /* HERO COM IMAGEM E BOTÃO INTEGRADO */
+        .hero-img-container {
+            max-width: 600px;
+            margin: 40px auto 30px;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
         }
-        .badge {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid rgba(16, 185, 129, 0.25);
-            color: var(--primary);
-            padding: 6px 14px;
+        .hero-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* CAMADA CLICÁVEL POSICIONADA SOBRE O BOTÃO DA ARTE */
+        .hero-cta-overlay {
+            position: absolute;
+            bottom: 7.5%;
+            left: 10%;
+            right: 10%;
+            height: 12%;
+            z-index: 10;
+            cursor: pointer;
             border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 22px;
         }
-        .hero h1 {
-            font-size: clamp(26px, 5vw, 44px);
-            line-height: 1.18;
-            font-weight: 800;
-            letter-spacing: -1px;
-            max-width: 840px;
-            margin: 0 auto 20px;
-        }
-        .hero p {
-            font-size: clamp(16px, 2.3vw, 19px);
-            color: var(--text-muted);
-            max-width: 780px;
-            margin: 0 auto 26px;
-        }
+
         .btn-main {
             display: inline-block;
             background: var(--primary);
@@ -161,19 +156,6 @@
         .btn-main:hover {
             background: var(--primary-hover);
             transform: translateY(-2px);
-        }
-        .ancoragem-vantagens {
-            display: block;
-            margin: 18px auto 14px;
-            font-size: 14px;
-            color: #fff;
-            font-weight: 600;
-        }
-        .micro-note {
-            display: block;
-            font-size: 12px;
-            color: #94a3b8;
-            font-weight: 500;
         }
 
         /* CARDS GERAIS */
@@ -336,7 +318,7 @@
 
     <!-- BARRA DE PROMOÇÃO NO TOPO -->
     <div class="top-bar">
-        🎁 CONDIÇÃO LIMITADA: Adquira sua maquininha hoje e ganhe 1 ANO de suporte consultivo. Informe-se.
+        PROMOÇÃO! FAÇA SUA ANÁLISE HOJE E GANHE 1 ANO DE SUPORTE CONSULTIVO SOBRE A GESTÃO DA SUA EMPRESA.
     </div>
 
     <!-- CABEÇALHO -->
@@ -345,26 +327,16 @@
             <a href="/" class="logo">
                 <img src="logo-nova.png" alt="Logotipo Taxa Parceira">
             </a>
-            <a href="https://tally.so/r/1AoXKW" class="btn-header" target="_blank" rel="noopener">Adquirir Maquininha</a>
+            <a href="https://tally.so/r/1AoXKW" class="btn-header" target="_blank" rel="noopener">Solicitar Análise</a>
         </div>
     </header>
 
     <main class="container">
 
-        <!-- DOBRA 1: HERO -->
-        <section class="hero">
-            <span class="badge">Comparativo Honesto de Maquininhas</span>
-            <h1>Vai ADQUIRIR ou TROCAR de MAQUININHA? Pare de PERDER boa parte do seu LUCRO.</h1>
-            <p>
-                Ajudamos a analisar o seu negócio e encontrar a <strong>maquininha mais adequada</strong> para você economizar nas vendas sem complicação.
-            </p>
-            <div>
-                <span class="ancoragem-vantagens">✅ Frete Grátis para todo Brasil + Bônus de 1 Ano de Consultoria</span>
-                <a href="https://tally.so/r/1AoXKW" class="btn-main" target="_blank" rel="noopener">
-                    QUERO ADQUIRIR MINHA MAQUININHA
-                </a>
-                <span class="micro-note" style="margin-top: 12px;">Análise exclusiva para quem tem REAL INTERESSE em ADQUIRIR ou TROCAR sua maquininha.</span>
-            </div>
+        <!-- DOBRA 1: HERO COM A ARTE E BOTÃO CLICÁVEL INTEGRADO -->
+        <section class="hero-img-container">
+            <img src="Artetaxaparceira" alt="Vai comprar ou trocar de maquininha? Descubra a opção ideal para seu negócio">
+            <a href="https://tally.so/r/1AoXKW" class="hero-cta-overlay" target="_blank" rel="noopener" aria-label="Solicitar Análise"></a>
         </section>
 
         <!-- DOBRA 2: DIFERENCIAIS -->
@@ -498,9 +470,9 @@
         <!-- DOBRA 6: CTA FINAL -->
         <section class="banner-cta">
             <h2>Pronto para descobrir qual a maquininha ideal para a sua empresa?</h2>
-            <p>Leva menos de 1 minuto para preencher. Sem mensalidades e sem compromisso.</p>
+            <p>Análise <strong style="color: var(--primary);">GRATUITA</strong> para quem tem interesse em adquirir ou trocar sua maquininha.</p>
             <a href="https://tally.so/r/1AoXKW" class="btn-main" target="_blank" rel="noopener">
-                QUERO ADQUIRIR MINHA MAQUININHA
+                Solicitar Análise
             </a>
             <span class="micro-note" style="display:block; margin-top:15px; color:#94a3b8; font-size:13px; font-weight:500;">
                 Análise exclusiva para quem tem real interesse em adquirir ou trocar.
@@ -528,15 +500,8 @@
             <p class="footer-disclaimer">
                 <strong>Aviso Legal de Conformidade (Google Ads):</strong> A Taxa Parceira atua estritamente no nicho COMERCIAL e B2B (Business-to-Business). Não somos instituição bancária, financeira, corretora ou correspondente bancário. <strong>NÃO</strong> realizamos concessão de empréstimos, financiamentos, cartões de crédito, consórcios, antecipações financeiras privativas ou intermediação de qualquer crédito regulado pelo Banco Central do Brasil. Nosso serviço é exclusivamente analítico sobre os custos de processamento e revenda de equipamentos (maquininhas).
             </p>
-
-            <p style="margin-top: 20px; font-size: 11px; color: #475569;">
-                &copy; 2026 Taxa Parceira. Todos os direitos reservados.
-            </p>
         </div>
     </footer>
 
 </body>
 </html>
-.
-.
-.
