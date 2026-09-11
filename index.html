@@ -58,7 +58,10 @@
             padding: 0 20px;
         }
 
-        /* BARRA DE PROMOÇÃO TOPO */
+        /* =========================================================
+           BARRA DE PROMOÇÃO TOPO
+           ========================================================= */
+
         .top-bar {
             background-color: #facc15;
             color: #042f2e;
@@ -69,7 +72,10 @@
             letter-spacing: 0.3px;
         }
 
-        /* HEADER */
+        /* =========================================================
+           HEADER
+           ========================================================= */
+
         .site-header {
             padding: 8px 0;
             border-bottom: 1px solid var(--border-color);
@@ -121,7 +127,10 @@
             color: #042f2e;
         }
 
-        /* AJUSTE PARA TELAS DE CELULAR */
+        /* =========================================================
+           AJUSTE PARA TELAS DE CELULAR
+           ========================================================= */
+
         @media (max-width: 480px) {
             .site-header {
                 padding: 6px 0;
@@ -142,7 +151,10 @@
             }
         }
 
-        /* HERO COM LINK DIRETO NA ARTE (100% CLICÁVEL) */
+        /* =========================================================
+           HERO COM LINK DIRETO NA ARTE (100% CLICÁVEL)
+           ========================================================= */
+
         .hero-banner-link {
             display: block;
             max-width: 600px;
@@ -166,6 +178,10 @@
             display: block;
         }
 
+        /* =========================================================
+           BOTÃO PRINCIPAL
+           ========================================================= */
+
         .btn-main {
             display: inline-block;
             background: var(--primary);
@@ -184,7 +200,10 @@
             transform: translateY(-2px);
         }
 
-        /* CARDS GERAIS */
+        /* =========================================================
+           CARDS GERAIS
+           ========================================================= */
+
         .section-title {
             text-align: center;
             font-size: clamp(24px, 3.5vw, 32px);
@@ -232,9 +251,17 @@
             font-size: 14px;
         }
 
-        /* SIMULAÇÃO EM R$ */
+        /* =========================================================
+           SIMULAÇÃO EM R$
+           ========================================================= */
+
         .sim-box {
-            background: linear-gradient(180deg, var(--bg-card) 0%, rgba(11, 17, 32, 0.9) 100%);
+            background: linear-gradient(
+                180deg,
+                var(--bg-card) 0%,
+                rgba(11, 17, 32, 0.9) 100%
+            );
+
             border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 38px 24px;
@@ -268,7 +295,10 @@
             font-weight: 800;
         }
 
-        /* COMO FUNCIONA (PASSOS) */
+        /* =========================================================
+           COMO FUNCIONA (PASSOS)
+           ========================================================= */
+
         .steps-box {
             padding: 20px 0 60px;
         }
@@ -303,7 +333,10 @@
             font-size: 13px;
         }
 
-        /* BANNER FINAL */
+        /* =========================================================
+           BANNER FINAL
+           ========================================================= */
+
         .banner-cta {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -325,7 +358,10 @@
             font-size: 15px;
         }
 
-        /* RODAPÉ DE CONFORMIDADE */
+        /* =========================================================
+           RODAPÉ DE CONFORMIDADE
+           ========================================================= */
+
         .site-footer {
             background-color: #060a14;
             border-top: 1px solid var(--border-color);
@@ -365,7 +401,7 @@
 <body>
 
     <!-- =========================================================
-         BARRA DE PROMOÇÃO
+         BARRA DE PROMOÇÃO TOPO
          ========================================================= -->
 
     <div class="top-bar">
@@ -392,7 +428,7 @@
                 href="https://tally.so/r/1AoXKW"
                 class="btn-header"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
             >
                 Solicitar Análise
             </a>
@@ -412,12 +448,14 @@
             href="https://tally.so/r/1AoXKW"
             class="hero-banner-link"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             aria-label="Solicitar Análise"
         >
 
+            <!-- ARTE ATUALIZADA -->
+
             <img
-                src="Ton_20260910_154128_0000.png"
+                src="a_vertical_promotional_advertisement_poster_graphi.png"
                 alt="Taxa Parceira — comparação independente de opções de maquininhas para negócios"
             >
 
@@ -802,14 +840,16 @@
                 para quem tem interesse em adquirir ou trocar sua maquininha.
             </p>
 
+
             <a
                 href="https://tally.so/r/1AoXKW"
                 class="btn-main"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
             >
                 Solicitar Análise
             </a>
+
 
             <span
                 style="
