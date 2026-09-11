@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Taxa Parceira — Comparativo e Indicação de Maquininhas</title>
-    <meta name="description" content="Compare opções de maquininhas para o seu negócio e identifique a solução mais adequada ao perfil da sua empresa.">
 
-    <meta property="og:title" content="Taxa Parceira — Comparativo e Indicação de Maquininhas">
-    <meta property="og:description" content="Análise independente para ajudar negócios a comparar opções de maquininhas de acordo com seu perfil e necessidades.">
+    <meta
+        name="description"
+        content="Compare opções de maquininhas para o seu negócio e identifique a solução mais adequada ao perfil da sua empresa."
+    >
+
+    <meta
+        property="og:title"
+        content="Taxa Parceira — Comparativo e Indicação de Maquininhas"
+    >
+
+    <meta
+        property="og:description"
+        content="Análise independente para ajudar negócios a comparar opções de maquininhas de acordo com seu perfil e necessidades."
+    >
+
     <meta property="og:type" content="website">
 
     <!-- =========================================================
-         GOOGLE TAG — GOOGLE ADS
+         GOOGLE ADS TAG
          ========================================================= -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406314850"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'AW-18406314850');
     </script>
     <!-- =========================================================
-         FIM DA GOOGLE TAG
+         FIM DA GOOGLE ADS TAG
          ========================================================= -->
 
     <style>
@@ -44,6 +61,10 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: var(--font);
             background-color: var(--bg-main);
@@ -52,39 +73,54 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
         .container {
+            width: 100%;
             max-width: 1040px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* BARRA DE PROMOÇÃO TOPO */
+        /* =========================================================
+           BARRA SUPERIOR
+           ========================================================= */
+
         .top-bar {
-            background-color: #facc15;
+            background: #facc15;
             color: #042f2e;
             text-align: center;
             padding: 10px 15px;
             font-size: 13px;
             font-weight: 700;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.2px;
         }
 
-        /* HEADER */
+        /* =========================================================
+           CABEÇALHO
+           ========================================================= */
+
         .site-header {
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border-color);
-            background: rgba(11, 17, 32, 0.95);
-            backdrop-filter: blur(8px);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            padding: 8px 0;
+            background: rgba(11, 17, 32, 0.96);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(8px);
         }
 
         .header-wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 8px;
+            gap: 12px;
         }
 
         .logo {
@@ -95,7 +131,644 @@
         }
 
         .logo img {
+            display: block;
             height: 54px;
             width: auto;
-            max-width: none;
-            object-fit: contain
+            object-fit: contain;
+        }
+
+        .btn-header {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--primary);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            padding: 8px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .btn-header:hover {
+            background: var(--primary);
+            color: #042f2e;
+            transform: translateY(-1px);
+        }
+
+        /* =========================================================
+           HERO / ARTE
+           ========================================================= */
+
+        .hero-area {
+            padding: 40px 0 30px;
+        }
+
+        .hero-banner-link {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            background: #060a14;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .hero-banner-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-banner-link img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* =========================================================
+           BOTÕES
+           ========================================================= */
+
+        .btn-main {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--primary);
+            color: #042f2e;
+            font-size: 17px;
+            font-weight: 800;
+            padding: 18px 38px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+            transition:
+                background-color 0.2s ease,
+                transform 0.15s ease;
+        }
+
+        .btn-main:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        /* =========================================================
+           SEÇÕES
+           ========================================================= */
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(24px, 3.5vw, 32px);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 15px;
+        }
+
+        /* =========================================================
+           CARDS
+           ========================================================= */
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 26px;
+            border-radius: 12px;
+        }
+
+        .card-icon {
+            font-size: 26px;
+            margin-bottom: 14px;
+        }
+
+        .card h3 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .featured-card {
+            grid-column: 1 / -1;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--bg-card) 0%,
+                    rgba(16, 185, 129, 0.10) 100%
+                );
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        /* =========================================================
+           SIMULAÇÃO
+           ========================================================= */
+
+        .sim-box {
+            background:
+                linear-gradient(
+                    180deg,
+                    var(--bg-card) 0%,
+                    rgba(11, 17, 32, 0.9) 100%
+                );
+
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 38px 24px;
+            margin: 20px 0 40px;
+            text-align: center;
+        }
+
+        .sim-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .sim-table {
+            width: 100%;
+            min-width: 640px;
+            max-width: 720px;
+            margin: 26px auto 10px;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .sim-table th,
+        .sim-table td {
+            padding: 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sim-table th {
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .sim-highlight {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .table-note {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 14px;
+        }
+
+        /* =========================================================
+           PASSOS
+           ========================================================= */
+
+        .steps-box {
+            padding: 20px 0 60px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .step {
+            border-left: 3px solid var(--primary);
+            padding-left: 18px;
+        }
+
+        .step-num {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .step h4 {
+            color: #fff;
+            font-size: 17px;
+            margin: 6px 0;
+        }
+
+        .step p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        /* =========================================================
+           CTA FINAL
+           ========================================================= */
+
+        .banner-cta {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 44px 24px;
+            text-align: center;
+            margin: 0 0 70px;
+        }
+
+        .banner-cta h2 {
+            font-size: clamp(22px, 3.5vw, 30px);
+            margin-bottom: 12px;
+        }
+
+        .banner-cta p {
+            color: var(--text-muted);
+            max-width: 620px;
+            margin: 0 auto 28px;
+            font-size: 15px;
+        }
+
+        .micro-note {
+            display: block;
+            margin-top: 15px;
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* =========================================================
+           RODAPÉ
+           ========================================================= */
+
+        .site-footer {
+            background: #060a14;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 48px 20px;
+            font-size: 12px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .footer-brand {
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .footer-links {
+            margin: 18px 0;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+
+        .footer-disclaimer {
+            max-width: 820px;
+            margin: 12px auto;
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
+
+        @media (max-width: 480px) {
+
+            .top-bar {
+                font-size: 12px;
+                padding: 9px 12px;
+            }
+
+            .site-header {
+                padding: 6px 0;
+            }
+
+            .header-wrap {
+                gap: 6px;
+            }
+
+            .logo img {
+                height: 44px;
+            }
+
+            .btn-header {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+
+            .hero-area {
+                padding: 24px 0 20px;
+            }
+
+            .hero-banner-link {
+                border-radius: 12px;
+            }
+
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .section {
+                padding: 30px 0;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .sim-box {
+                padding: 28px 16px;
+            }
+
+            .banner-cta {
+                padding: 32px 18px;
+            }
+
+            .btn-main {
+                width: 100%;
+                font-size: 16px;
+                padding: 17px 24px;
+            }
+
+            .site-footer {
+                padding: 36px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         BARRA DE PROMOÇÃO
+         ========================================================= -->
+
+    <div class="top-bar">
+        PROMOÇÃO! FAÇA SUA ANÁLISE HOJE E GANHE 1 ANO DE SUPORTE CONSULTIVO SOBRE A GESTÃO DA SUA EMPRESA.
+    </div>
+
+
+    <!-- =========================================================
+         CABEÇALHO
+         ========================================================= -->
+
+    <header class="site-header">
+        <div class="container header-wrap">
+
+            <a href="/" class="logo" aria-label="Taxa Parceira">
+                <img
+                    src="logonova.png"
+                    alt="Logotipo Taxa Parceira"
+                >
+            </a>
+
+            <a
+                href="https://tally.so/r/1AoXKW"
+                class="btn-header"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Solicitar Análise
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         CONTEÚDO PRINCIPAL
+         ========================================================= -->
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
+        <section class="hero-area">
+            <div class="container">
+
+                <a
+                    href="https://tally.so/r/1AoXKW"
+                    class="hero-banner-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Solicitar análise da Taxa Parceira"
+                >
+
+                    <!--
+                    NOVA ARTE DO ANÚNCIO
+
+                    O nome abaixo deve corresponder exatamente
+                    ao arquivo existente no GitHub.
+                    -->
+
+                    <img
+                        src="file_0000000033a4820e801da3ee5f36923a.png"
+                        alt="Taxa Parceira — comparação independente de opções de maquininhas para negócios"
+                    >
+
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             DIFERENCIAIS
+             ===================================================== -->
+
+        <section class="section">
+            <div class="container">
+
+                <h2 class="section-title">
+                    Por que contar com a Taxa Parceira?
+                </h2>
+
+                <p class="section-desc">
+                    Oferecemos uma análise independente, atendimento humano e informações para ajudar você a escolher uma solução adequada ao seu negócio.
+                </p>
+
+                <div class="cards-grid">
+
+                    <div class="card">
+                        <div class="card-icon">🚚</div>
+
+                        <h3>
+                            Frete Grátis para todo Brasil
+                        </h3>
+
+                        <p>
+                            O equipamento chega diretamente na sua porta, sem custos adicionais de entrega.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon">✨</div>
+
+                        <h3>
+                            Aparelhos 100% Novos
+                        </h3>
+
+                        <p>
+                            Zero risco de receber maquininhas usadas. Equipamentos de ponta para a sua empresa.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+
+                        <h3>
+                            Transparência Total
+                        </h3>
+
+                        <p>
+                            Indicamos uma opção de acordo com as características e necessidades do seu negócio.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon">🛡️</div>
+
+                        <h3>
+                            Maquininhas com Garantia e Suporte
+                        </h3>
+
+                        <p>
+                            Segurança completa caso a maquininha precise de assistência técnica ou substituição.
+                        </p>
+                    </div>
+
+
+                    <div class="card featured-card">
+                        <div class="card-icon">🎁</div>
+
+                        <h3>
+                            Suporte Consultivo por Tempo Limitado
+                        </h3>
+
+                        <p>
+                            Ao contratar uma solução indicada pela Taxa Parceira, você ganha
+                            <strong>1 ANO DE SUPORTE CONSULTIVO</strong>
+                            para tirar dúvidas de gestão e operação do seu negócio sempre que precisar de orientação.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <em>*Informe-se sobre as condições.</em>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ONDE O DINHEIRO SE PERDE
+             ===================================================== -->
+
+        <section class="section">
+            <div class="container">
+
+                <h2 class="section-title">
+                    Onde o lucro das suas vendas costuma se perder
+                </h2>
+
+                <p class="section-desc">
+                    Muitos empreendedores olham apenas o preço do aparelho e esquecem os custos diários que podem impactar o resultado das vendas.
+                </p>
+
+                <div class="cards-grid">
+
+                    <div class="card">
+                        <div class="card-icon">💳</div>
+
+                        <h3>
+                            Custos de Venda
+                        </h3>
+
+                        <p>
+                            A maior perda pode acontecer nas vendas parceladas. Mostramos quais opções podem se adequar melhor ao perfil do seu negócio.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon">⏱️</div>
+
+                        <h3>
+                            Prazos de Recebimento
+                        </h3>
+
+                        <p>
+                            Receber na hora, em 1 dia útil ou em parcelas pode mudar o planejamento do fluxo de caixa mensal.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+
+                        <h3>
+                            Volume Faturado
+                        </h3>
+
+                        <p>
+                            O volume de vendas influencia a escolha. A análise considera o perfil e as necessidades de cada negócio.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             EXEMPLO PRÁTICO
+             ===================================================== -->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="sim-box">
+
+                    <h2 style="font-size: 24px; margin-bottom: 10px;">
+                        Exemplo prático
