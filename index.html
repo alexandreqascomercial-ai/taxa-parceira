@@ -5,27 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Taxa Parceira — Comparativo e Indicação de Maquininhas</title>
-    <meta name="description" content="Compare opções de maquininhas para o seu negócio e identifique a solução mais adequada ao perfil da sua empresa.">
 
-    <meta property="og:title" content="Taxa Parceira — Comparativo e Indicação de Maquininhas">
-    <meta property="og:description" content="Análise independente para ajudar empreendedores a comparar opções de maquininhas de acordo com seu perfil e necessidades.">
+    <meta
+        name="description"
+        content="Compare opções de maquininhas para o seu negócio com uma análise independente baseada no perfil da sua empresa e nas informações divulgadas pelas próprias marcas."
+    >
+
+    <meta
+        property="og:title"
+        content="Taxa Parceira — Comparativo e Indicação de Maquininhas"
+    >
+
+    <meta
+        property="og:description"
+        content="Análise independente para ajudar empreendedores a comparar opções de maquininhas de acordo com seu perfil e necessidades."
+    >
+
     <meta property="og:type" content="website">
+
 
     <!-- =========================================================
          GOOGLE TAG — GOOGLE ADS
          ========================================================= -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406314850"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
+
         gtag('config', 'AW-18406314850');
     </script>
+
     <!-- =========================================================
          FIM DA GOOGLE TAG
          ========================================================= -->
 
+
     <style>
+
         :root {
             --bg-main: #0b1120;
             --bg-card: #131d31;
@@ -38,11 +61,13 @@
             --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
 
         body {
             font-family: var(--font);
@@ -52,13 +77,18 @@
             -webkit-font-smoothing: antialiased;
         }
 
+
         .container {
             max-width: 1040px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* BARRA DE PROMOÇÃO TOPO */
+
+        /* =========================================================
+           BARRA DE PROMOÇÃO TOPO
+           ========================================================= */
+
         .top-bar {
             background-color: #facc15;
             color: #042f2e;
@@ -69,7 +99,11 @@
             letter-spacing: 0.3px;
         }
 
-        /* HEADER */
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
+
         .site-header {
             padding: 8px 0;
             border-bottom: 1px solid var(--border-color);
@@ -80,12 +114,14 @@
             z-index: 100;
         }
 
+
         .header-wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 8px;
         }
+
 
         .logo {
             display: flex;
@@ -94,6 +130,7 @@
             flex-shrink: 0;
         }
 
+
         .logo img {
             height: 54px;
             width: auto;
@@ -101,6 +138,7 @@
             object-fit: contain;
             display: block;
         }
+
 
         .btn-header {
             background: rgba(16, 185, 129, 0.12);
@@ -116,33 +154,47 @@
             transition: all 0.2s ease;
         }
 
+
         .btn-header:hover {
             background: var(--primary);
             color: #042f2e;
         }
 
-        /* AJUSTE PARA TELAS DE CELULAR */
+
+        /* =========================================================
+           AJUSTE PARA TELAS DE CELULAR
+           ========================================================= */
+
         @media (max-width: 480px) {
+
             .site-header {
                 padding: 6px 0;
             }
 
+
             .header-wrap {
                 gap: 6px;
             }
+
 
             .logo img {
                 height: 44px;
                 max-width: none;
             }
 
+
             .btn-header {
                 padding: 6px 10px;
                 font-size: 11px;
             }
+
         }
 
-        /* HERO COM LINK DIRETO NA ARTE (100% CLICÁVEL) */
+
+        /* =========================================================
+           HERO COM LINK DIRETO NA ARTE
+           ========================================================= */
+
         .hero-banner-link {
             display: block;
             max-width: 600px;
@@ -156,15 +208,22 @@
             transition: transform 0.2s ease;
         }
 
+
         .hero-banner-link:hover {
             transform: translateY(-2px);
         }
+
 
         .hero-banner-link img {
             width: 100%;
             height: auto;
             display: block;
         }
+
+
+        /* =========================================================
+           BOTÃO PRINCIPAL
+           ========================================================= */
 
         .btn-main {
             display: inline-block;
@@ -179,12 +238,17 @@
             transition: transform 0.15s ease, background-color 0.15s ease;
         }
 
+
         .btn-main:hover {
             background: var(--primary-hover);
             transform: translateY(-2px);
         }
 
-        /* CARDS GERAIS */
+
+        /* =========================================================
+           CARDS GERAIS
+           ========================================================= */
+
         .section-title {
             text-align: center;
             font-size: clamp(24px, 3.5vw, 32px);
@@ -193,13 +257,15 @@
             margin-bottom: 12px;
         }
 
+
         .section-desc {
             text-align: center;
             color: var(--text-muted);
-            max-width: 620px;
+            max-width: 680px;
             margin: 0 auto 40px;
             font-size: 15px;
         }
+
 
         .cards-grid {
             display: grid;
@@ -208,6 +274,7 @@
             margin-bottom: 60px;
         }
 
+
         .card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -215,10 +282,12 @@
             border-radius: 12px;
         }
 
+
         .card-icon {
             font-size: 26px;
             margin-bottom: 14px;
         }
+
 
         .card h3 {
             font-size: 18px;
@@ -227,20 +296,61 @@
             color: #fff;
         }
 
+
         .card p {
             color: var(--text-muted);
             font-size: 14px;
         }
 
-        /* SIMULAÇÃO EM R$ */
+
+        /* =========================================================
+           CAIXA DE TRANSPARÊNCIA
+           ========================================================= */
+
+        .transparency-box {
+            background: rgba(16, 185, 129, 0.06);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 12px;
+            padding: 22px;
+            margin-top: -25px;
+            margin-bottom: 55px;
+            text-align: center;
+        }
+
+
+        .transparency-box h3 {
+            color: var(--primary);
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+
+        .transparency-box p {
+            color: var(--text-muted);
+            font-size: 13px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================================================
+           SIMULAÇÃO EM R$
+           ========================================================= */
+
         .sim-box {
-            background: linear-gradient(180deg, var(--bg-card) 0%, rgba(11, 17, 32, 0.9) 100%);
+            background: linear-gradient(
+                180deg,
+                var(--bg-card) 0%,
+                rgba(11, 17, 32, 0.9) 100%
+            );
+
             border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 38px 24px;
             margin-bottom: 60px;
             text-align: center;
         }
+
 
         .sim-table {
             width: 100%;
@@ -251,10 +361,13 @@
             font-size: 14px;
         }
 
-        .sim-table th, .sim-table td {
+
+        .sim-table th,
+        .sim-table td {
             padding: 14px;
             border-bottom: 1px solid var(--border-color);
         }
+
 
         .sim-table th {
             color: var(--text-muted);
@@ -262,15 +375,21 @@
             text-transform: uppercase;
         }
 
+
         .sim-highlight {
             color: var(--primary);
             font-weight: 800;
         }
 
-        /* COMO FUNCIONA (PASSOS) */
+
+        /* =========================================================
+           COMO FUNCIONA
+           ========================================================= */
+
         .steps-box {
             padding: 20px 0 60px;
         }
+
 
         .steps-grid {
             display: grid;
@@ -278,10 +397,12 @@
             gap: 24px;
         }
 
+
         .step {
             border-left: 3px solid var(--primary);
             padding-left: 18px;
         }
+
 
         .step-num {
             font-size: 12px;
@@ -291,18 +412,68 @@
             letter-spacing: 0.5px;
         }
 
+
         .step h4 {
             font-size: 17px;
             margin: 6px 0;
             color: #fff;
         }
 
+
         .step p {
             color: var(--text-muted);
             font-size: 13px;
         }
 
-        /* BANNER FINAL */
+
+        .step-note {
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: rgba(148, 163, 184, 0.06);
+            border-radius: 8px;
+            color: #94a3b8;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+
+        /* =========================================================
+           BLOCO ESCOLHA LIVRE
+           ========================================================= */
+
+        .choice-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px 24px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+
+        .choice-box h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+
+        .choice-box p {
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+
+        .choice-box strong {
+            color: #fff;
+        }
+
+
+        /* =========================================================
+           BANNER FINAL
+           ========================================================= */
+
         .banner-cta {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -312,10 +483,12 @@
             margin-bottom: 70px;
         }
 
+
         .banner-cta h2 {
             font-size: clamp(22px, 3.5vw, 30px);
             margin-bottom: 12px;
         }
+
 
         .banner-cta p {
             color: var(--text-muted);
@@ -324,7 +497,11 @@
             font-size: 15px;
         }
 
-        /* RODAPÉ DE CONFORMIDADE */
+
+        /* =========================================================
+           RODAPÉ
+           ========================================================= */
+
         .site-footer {
             background-color: #060a14;
             border-top: 1px solid var(--border-color);
@@ -335,6 +512,7 @@
             text-align: center;
         }
 
+
         .footer-brand {
             color: #fff;
             font-weight: 700;
@@ -342,9 +520,11 @@
             margin-bottom: 6px;
         }
 
+
         .footer-links {
             margin: 18px 0;
         }
+
 
         .footer-links a {
             color: #cbd5e1;
@@ -352,29 +532,87 @@
             margin: 0 10px;
         }
 
+
         .footer-disclaimer {
             font-size: 11px;
             color: #64748b;
             max-width: 820px;
             margin: 12px auto;
         }
+
+
+        /* =========================================================
+           RESPONSIVIDADE DA TABELA
+           ========================================================= */
+
+        @media (max-width: 600px) {
+
+            .sim-box {
+                padding: 28px 12px;
+            }
+
+
+            .sim-table {
+                font-size: 12px;
+            }
+
+
+            .sim-table th,
+            .sim-table td {
+                padding: 10px 7px;
+            }
+
+
+            .sim-table th {
+                font-size: 10px;
+            }
+
+
+            .transparency-box {
+                padding: 20px 16px;
+            }
+
+
+            .choice-box {
+                padding: 28px 18px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- BARRA DE PROMOÇÃO NO TOPO -->
+
+    <!-- =========================================================
+         BARRA DE PROMOÇÃO NO TOPO
+         ========================================================= -->
+
     <div class="top-bar">
         PROMOÇÃO! FAÇA SUA ANÁLISE HOJE E GANHE 1 ANO DE SUPORTE CONSULTIVO SOBRE A GESTÃO DA SUA EMPRESA.
     </div>
 
-    <!-- CABEÇALHO -->
+
+    <!-- =========================================================
+         CABEÇALHO
+         ========================================================= -->
+
     <header class="site-header">
+
         <div class="container header-wrap">
 
             <a href="/" class="logo">
-                <img src="logonova.png" alt="Logotipo Taxa Parceira">
+
+                <img
+                    src="logonova.png"
+                    alt="Logotipo Taxa Parceira"
+                >
+
             </a>
+
 
             <a
                 href="https://tally.so/r/1AoXKW"
@@ -386,11 +624,17 @@
             </a>
 
         </div>
+
     </header>
+
 
     <main class="container">
 
-        <!-- DOBRA 1: ARTE HERO 100% CLICÁVEL -->
+
+        <!-- =====================================================
+             DOBRA 1: ARTE HERO
+             ===================================================== -->
+
         <a
             href="https://tally.so/r/1AoXKW"
             class="hero-banner-link"
@@ -398,93 +642,163 @@
             rel="noopener"
             aria-label="Solicitar Análise"
         >
+
             <img
                 src="file_0000000033a4820e801da3ee5f36923a.png"
                 alt="Vai comprar ou trocar de maquininha? A Taxa Parceira compara opções do mercado para ajudar a identificar uma solução adequada ao seu negócio"
             >
+
         </a>
 
-        <!-- DOBRA 2: DIFERENCIAIS -->
+
+        <!-- =====================================================
+             DOBRA 2: DIFERENCIAIS
+             ===================================================== -->
+
         <section style="padding: 30px 0;">
 
             <h2 class="section-title">
                 Por que vale a pena contar com a Taxa Parceira?
             </h2>
 
+
             <p class="section-desc">
                 Oferecemos uma análise independente, atendimento humano e informações para ajudar você a escolher uma solução adequada ao seu negócio.
             </p>
 
+
             <div class="cards-grid">
 
+
                 <div class="card">
+
                     <div class="card-icon">🚚</div>
-                    <h3>Frete Grátis para todo Brasil</h3>
+
+                    <h3>
+                        Frete Grátis
+                    </h3>
+
                     <p>
-                        O equipamento chega diretamente na sua porta, sem custos adicionais de entrega.
+                        As opções de maquininhas que indicamos contam com frete grátis, conforme as condições comerciais aplicáveis a cada marca.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="card-icon">✨</div>
-                    <h3>Aparelhos 100% Novos</h3>
+
+                    <h3>
+                        Aparelhos 100% Novos
+                    </h3>
+
                     <p>
-                        Equipamentos novos, sujeitos às condições comerciais e de garantia aplicáveis à solução escolhida.
+                        As opções indicadas são de equipamentos novos, conforme as condições de fornecimento da marca escolhida.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="card-icon">🤝</div>
-                    <h3>Transparência Total</h3>
+
+                    <h3>
+                        Transparência Total
+                    </h3>
+
                     <p>
-                        Indicamos uma opção de acordo com as características e necessidades do seu negócio.
+                        Apresentamos informações para facilitar a comparação e indicamos uma opção de acordo com as características e necessidades do seu negócio.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="card-icon">🛡️</div>
-                    <h3>Maquininhas com Garantia e Suporte</h3>
+
+                    <h3>
+                        Garantia e Suporte
+                    </h3>
+
                     <p>
-                        As condições de garantia e suporte dependem da empresa e da solução escolhida pelo cliente.
+                        As opções indicadas contam com garantia e suporte oferecidos pela respectiva marca, conforme as condições aplicáveis.
                     </p>
+
                 </div>
+
 
                 <div
                     class="card"
                     style="grid-column: 1 / -1; background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.1) 100%); border-color: rgba(16, 185, 129, 0.4);"
                 >
+
                     <div class="card-icon">🎁</div>
 
                     <h3>
-                        Bônus Exclusivo por Tempo Limitado
+                        Suporte Consultivo por Tempo Limitado
                     </h3>
 
                     <p>
                         Ao adquirir uma solução indicada pela Taxa Parceira, você pode receber
                         <strong>1 ANO DE SUPORTE CONSULTIVO</strong>
-                        para tirar dúvidas de gestão e operação do seu negócio sempre que precisar de orientação, conforme as condições da promoção.
+                        para tirar dúvidas de gestão e operação do seu negócio, conforme as condições da promoção.
                         <br><br>
                         <em>*Informe-se sobre as condições.</em>
                     </p>
+
                 </div>
 
+
             </div>
+
+
+            <!-- =================================================
+                 TRANSPARÊNCIA SOBRE A ANÁLISE
+                 ================================================= -->
+
+            <div class="transparency-box">
+
+                <h3>
+                    Como funciona a nossa análise
+                </h3>
+
+                <p>
+                    A análise utiliza informações básicas e estimadas sobre o seu negócio.
+                    Não solicitamos dados sensíveis, como CPF, RG, senhas, dados bancários
+                    ou números de cartão. As informações sobre taxas e condições apresentadas
+                    no comparativo têm como referência os dados divulgados pelas próprias marcas
+                    em seus canais oficiais.
+                </p>
+
+            </div>
+
         </section>
 
-        <!-- DOBRA 3: ONDE O DINHEIRO SE PERDE -->
+
+        <!-- =====================================================
+             DOBRA 3: ONDE O DINHEIRO SE PERDE
+             ===================================================== -->
+
         <section style="padding: 20px 0 40px;">
 
             <h2 class="section-title">
                 Onde o lucro das suas vendas costuma se perder
             </h2>
 
+
             <p class="section-desc">
                 Muitos empreendedores olham apenas o preço do aparelho e esquecem os custos diários que podem impactar o resultado das vendas.
             </p>
 
+
             <div class="cards-grid">
 
+
                 <div class="card">
+
                     <div class="card-icon">💳</div>
 
                     <h3>
@@ -494,9 +808,12 @@
                     <p>
                         As taxas e condições de recebimento podem impactar diretamente o resultado das vendas. Compare as opções de acordo com o perfil do seu negócio.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="card-icon">⏱️</div>
 
                     <h3>
@@ -504,11 +821,14 @@
                     </h3>
 
                     <p>
-                        Receber na hora, em 1 dia útil ou em parcelas muda totalmente o fôlego do seu fluxo de caixa mensal.
+                        Receber na hora, em 1 dia útil ou em parcelas pode mudar o planejamento do fluxo de caixa mensal.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="card-icon">📈</div>
 
                     <h3>
@@ -516,28 +836,41 @@
                     </h3>
 
                     <p>
-                        Quem fatura R$ 3 mil não deve usar necessariamente a mesma solução de quem fatura R$ 30 mil. O perfil do negócio influencia a escolha.
+                        Quem fatura R$ 3 mil pode ter necessidades diferentes de quem fatura R$ 30 mil. O perfil do negócio influencia a escolha.
                     </p>
+
                 </div>
 
+
             </div>
+
         </section>
 
-        <!-- DOBRA 4: EXEMPLO PRÁTICO -->
+
+        <!-- =====================================================
+             DOBRA 4: EXEMPLO PRÁTICO
+             ===================================================== -->
+
         <section class="sim-box">
 
             <h2 style="font-size: 24px; margin-bottom: 10px;">
                 Exemplo prático do impacto no bolso
             </h2>
 
-            <p style="color: var(--text-muted); font-size: 14px; max-width: 620px; margin: 0 auto;">
+
+            <p
+                style="color: var(--text-muted); font-size: 14px; max-width: 620px; margin: 0 auto;"
+            >
                 Veja, de forma ilustrativa, como diferenças de custos podem impactar uma empresa com volume de R$ 20.000/mês:
             </p>
+
 
             <table class="sim-table">
 
                 <thead>
+
                     <tr>
+
                         <th>
                             Cenário de Mercado
                         </th>
@@ -549,12 +882,16 @@
                         <th>
                             Impacto no Ano
                         </th>
+
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td>
                             Maquininha com cobranças mais altas
                         </td>
@@ -566,9 +903,12 @@
                         <td>
                             R$ 10.200 / ano
                         </td>
+
                     </tr>
 
+
                     <tr>
+
                         <td class="sim-highlight">
                             Solução mais adequada ao perfil
                         </td>
@@ -580,38 +920,56 @@
                         <td class="sim-highlight">
                             R$ 6.120 / ano
                         </td>
+
                     </tr>
 
+
                     <tr>
+
                         <td
                             colspan="3"
                             style="text-align: center; padding-top: 16px; color: var(--primary); font-weight: 700;"
                         >
                             Diferença ilustrativa: mais de R$ 4.000 no ano
                         </td>
+
                     </tr>
 
                 </tbody>
+
             </table>
 
-            <p style="font-size: 11px; color: #64748b; margin-top: 14px;">
-                *Valores demonstrativos. O custo real depende estritamente do volume, mix de vendas e condições comerciais aplicáveis a cada negócio.
+
+            <p
+                style="font-size: 11px; color: #64748b; margin-top: 14px;"
+            >
+                *Valores demonstrativos. O custo real depende estritamente do volume,
+                mix de vendas e condições comerciais aplicáveis a cada negócio.
             </p>
 
         </section>
 
-        <!-- DOBRA 5: PASSOS -->
+
+        <!-- =====================================================
+             DOBRA 5: PASSOS
+             ===================================================== -->
+
         <section class="steps-box">
 
             <h2 class="section-title">
                 Como ajudamos em 3 passos simples
             </h2>
 
+
             <p class="section-desc">
                 Rápido, transparente e direto:
             </p>
 
+
             <div class="steps-grid">
+
+
+                <!-- PASSO 01 -->
 
                 <div class="step">
 
@@ -619,15 +977,26 @@
                         Passo 01
                     </span>
 
+
                     <h4>
                         Preencha o formulário
                     </h4>
 
+
                     <p>
-                        Informe o seu segmento e a sua média de vendas mensais.
+                        Informe apenas informações básicas e estimadas sobre o seu negócio,
+                        como segmento, volume aproximado de vendas e situação atual.
                     </p>
 
+
+                    <div class="step-note">
+                        Não solicitamos CPF, RG, senhas, dados bancários ou números de cartão para realizar a análise.
+                    </div>
+
                 </div>
+
+
+                <!-- PASSO 02 -->
 
                 <div class="step">
 
@@ -635,15 +1004,26 @@
                         Passo 02
                     </span>
 
+
                     <h4>
-                        Análise do seu perfil
+                        Análise e comparação
                     </h4>
 
+
                     <p>
-                        Cruzamos características, taxas, prazos e condições comerciais disponíveis entre as opções analisadas.
+                        Organizamos as informações de acordo com o seu perfil e comparamos
+                        taxas, prazos e condições divulgadas pelas próprias marcas em seus canais oficiais.
                     </p>
 
+
+                    <div class="step-note">
+                        O comparativo é baseado nas informações disponíveis e divulgadas pelas marcas.
+                    </div>
+
                 </div>
+
+
+                <!-- PASSO 03 -->
 
                 <div class="step">
 
@@ -651,25 +1031,64 @@
                         Passo 03
                     </span>
 
+
                     <h4>
-                        Indicação da opção mais adequada
+                        Você escolhe livremente
                     </h4>
 
+
                     <p>
-                        Entramos em contato para entender melhor o seu perfil e indicar uma opção adequada para você avaliar.
+                        Apresentamos o comparativo e uma indicação de acordo com o seu perfil.
+                        A decisão final é sempre sua.
                     </p>
+
+
+                    <div class="step-note">
+                        A contratação é realizada diretamente com a marca escolhida, sem intermediação da Taxa Parceira.
+                    </div>
 
                 </div>
 
+
             </div>
+
         </section>
 
-        <!-- DOBRA 6: CTA FINAL -->
+
+        <!-- =====================================================
+             BLOCO DE ESCOLHA LIVRE
+             ===================================================== -->
+
+        <section class="choice-box">
+
+            <h3>
+                A decisão é sempre sua
+            </h3>
+
+
+            <p>
+                Nosso objetivo é facilitar a comparação.
+                <strong>
+                    Não exigimos que você escolha uma determinada marca.
+                </strong>
+                Depois de analisar as opções apresentadas, você decide livremente
+                qual solução faz mais sentido para a realidade do seu negócio.
+                Todo o procedimento de contratação é realizado diretamente com a marca escolhida.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             DOBRA 6: CTA FINAL
+             ===================================================== -->
+
         <section class="banner-cta">
 
             <h2>
                 Pronto para descobrir qual opção de maquininha faz mais sentido para sua empresa?
             </h2>
+
 
             <p>
                 Análise
@@ -678,6 +1097,7 @@
                 </strong>
                 para quem tem interesse em adquirir ou trocar sua maquininha.
             </p>
+
 
             <a
                 href="https://tally.so/r/1AoXKW"
@@ -688,6 +1108,7 @@
                 Solicitar Análise
             </a>
 
+
             <span
                 class="micro-note"
                 style="display:block; margin-top:15px; color:#94a3b8; font-size:13px; font-weight:500;"
@@ -697,57 +1118,163 @@
 
         </section>
 
+
     </main>
 
-    <!-- RODAPÉ DE CONFORMIDADE -->
+
+    <!-- =========================================================
+         RODAPÉ DE CONFORMIDADE
+         ========================================================= -->
+
     <footer class="site-footer">
 
         <div class="container">
+
 
             <p class="footer-brand">
                 Taxa Parceira — Comparativo e Indicação de Maquininhas
             </p>
 
+
             <p style="margin-bottom: 12px;">
+
                 Responsável Técnico:
-                <strong>Alexandre Queiroz de Almeida Souza</strong>
+                <strong>
+                    Alexandre Queiroz de Almeida Souza
+                </strong>
+
                 | São Paulo - SP |
-                Contato: alexandreqas.comercial@gmail.com
+
+                Contato:
+                alexandreqas.comercial@gmail.com
+
             </p>
 
+
             <div class="footer-links">
+
                 <a href="privacidade.html">
                     Política de Privacidade
                 </a>
+
             </div>
 
+
+            <!-- TRANSPARÊNCIA COMERCIAL -->
+
             <p class="footer-disclaimer">
-                <strong>Transparência Comercial:</strong>
-                A Taxa Parceira é um serviço independente de curadoria e comparação de equipamentos de recebimento.
-                Podemos receber remuneração comercial de parceiros caso você opte por adquirir alguma das soluções indicadas,
+
+                <strong>
+                    Transparência Comercial:
+                </strong>
+
+                A Taxa Parceira é um serviço independente de curadoria,
+                comparação e indicação de equipamentos de recebimento.
+
+                Podemos receber remuneração comercial de parceiros caso
+                você opte por adquirir alguma das soluções indicadas,
                 sem nenhum custo adicional para você.
+
+                A remuneração comercial não altera a liberdade de escolha
+                do cliente.
+
             </p>
 
-            <p class="footer-disclaimer">
-                <strong>Independência e identidade comercial:</strong>
-                A Taxa Parceira possui identidade própria e não representa oficialmente Ton, PagBank, Mercado Pago,
-                InfinitePay ou qualquer outra marca mencionada em nossos materiais.
-                As marcas podem ser apresentadas exclusivamente para fins de comparação, análise e indicação comercial.
-            </p>
+
+            <!-- INDEPENDÊNCIA -->
 
             <p class="footer-disclaimer">
-                <strong>Aviso Legal de Conformidade (Google Ads):</strong>
-                A Taxa Parceira atua estritamente no nicho COMERCIAL e B2B (Business-to-Business).
-                Não somos instituição bancária, financeira, corretora ou correspondente bancário.
-                <strong>NÃO</strong> realizamos concessão de empréstimos, financiamentos, cartões de crédito,
-                consórcios, antecipações financeiras privativas ou intermediação de qualquer crédito regulado
+
+                <strong>
+                    Independência e identidade comercial:
+                </strong>
+
+                A Taxa Parceira possui identidade própria e não representa
+                oficialmente Ton, PagBank, Mercado Pago, InfinitePay ou
+                qualquer outra marca mencionada em nossos materiais.
+
+                As marcas podem ser apresentadas exclusivamente para fins
+                de comparação, análise e indicação comercial.
+
+            </p>
+
+
+            <!-- PROCESSO DE ANÁLISE -->
+
+            <p class="footer-disclaimer">
+
+                <strong>
+                    Sobre a análise:
+                </strong>
+
+                A Taxa Parceira utiliza informações básicas e estimadas
+                fornecidas pelo próprio interessado.
+
+                Não solicitamos CPF, RG, senhas, dados bancários,
+                números de cartão ou outras credenciais financeiras
+                para realizar o comparativo.
+
+                As informações sobre taxas e condições apresentadas
+                têm como referência os dados divulgados pelas próprias
+                marcas em seus canais oficiais.
+
+            </p>
+
+
+            <!-- CONTRATAÇÃO -->
+
+            <p class="footer-disclaimer">
+
+                <strong>
+                    Contratação:
+                </strong>
+
+                A Taxa Parceira apresenta o comparativo para facilitar
+                a tomada de decisão.
+
+                A escolha é livre e a contratação da solução escolhida
+                é realizada diretamente com a respectiva marca.
+
+                A Taxa Parceira não realiza a contratação em nome das
+                marcas apresentadas.
+
+            </p>
+
+
+            <!-- AVISO LEGAL -->
+
+            <p class="footer-disclaimer">
+
+                <strong>
+                    Aviso Legal de Conformidade:
+                </strong>
+
+                A Taxa Parceira atua estritamente no nicho COMERCIAL
+                e B2B (Business-to-Business).
+
+                Não somos instituição bancária, financeira, corretora
+                ou correspondente bancário.
+
+                <strong>
+                    NÃO
+                </strong>
+
+                realizamos concessão de empréstimos, financiamentos,
+                cartões de crédito, consórcios, antecipações financeiras
+                privativas ou intermediação de qualquer crédito regulado
                 pelo Banco Central do Brasil.
-                Nosso serviço é exclusivamente analítico sobre os custos de processamento e indicação de equipamentos (maquininhas).
+
+                Nosso serviço é exclusivamente voltado à análise,
+                comparação e indicação comercial de equipamentos
+                de recebimento (maquininhas).
+
             </p>
+
 
         </div>
 
     </footer>
+
 
 </body>
 </html>
